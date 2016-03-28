@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{ISO8601} [%p] %logger +[%L] - %msg%n</pattern>
+		</encoder>		
+	</appender>
+	
+	
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>log/listener.log</File>		
+		<encoder>
+			<pattern>%d{ISO8601} [%thread] %-5level %logger{35} - %msg%n</pattern>
+		</encoder>		
+		
+		<rollingPolicy class = "ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>log\listener.%d.log</fileNamePattern>
+			
+			<maxHistory>10</maxHistory>
+		</rollingPolicy>
+		
+	</appender>
+	
+	
+	<appender name="ERRORFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>log/error.log</File>		
+    	<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      		<level>WARN</level>
+    	</filter>
+		<encoder>
+			<pattern>%d{ISO8601} [%thread] %-5level %logger{35} - %msg%n</pattern>
+		</encoder>	
+		
+		<rollingPolicy class = "ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>log\error.%d.log</fileNamePattern>
+			
+			<maxHistory>10</maxHistory>
+		</rollingPolicy>
+
+		
+	</appender>
+	<root>
+		<level value="ERROR" />
+	
+		<appender-ref ref="FILE" />
+		<appender-ref ref="ERRORFILE" />
+	</root>
+	<logger name="br.com.radiolistener">
+		<level value="INFO" />
+	</logger>
+		<logger name="br.com.radiolistener.Listener.RadioClientManager">
+		<level value="INFO" />
+	</logger>
+
+		<logger name="br.com.radiolistener.Listener.RadioClient">
+		<level value="INFO" />
+	</logger>
+	<logger name="org.red5.io">
+		<level value="WARN" />
+	</logger>
+	<logger name="org.red5.io.flv">
+		<level value="ERROR"/>
+	</logger>
+	<logger name="org.red5.server">
+		<level value="INFO" />
+	</logger>
+	<logger name="org.red5.server.messaging.InMemoryPushPushPipe">
+		<level value="INFO" />
+	</logger>
+	<logger name="org.red5.server.net">
+		<level value="INFO" />
+	</logger>
+	<logger name="org.red5.server.net.rtmp">
+		<level value="WARN" />
+	</logger>	
+	<logger name="org.red5.server.net.rtmp.RTMPHandler">
+		<level value="WARN" />
+	</logger>
+	<logger name="org.red5.server.net.rtmp.BaseRTMPHandler">
+		<level value="WARN" />
+	</logger>
+	<logger name="org.red5.server.net.rtmp.codec">
+		<level value="WARN" />
+	</logger>
+	<logger name="org.red5.server.net.rtmp.RTMPMinaIoHandler">
+		<level value="WARN" />
+	</logger>
+	<logger name="org.red5.server.net.rtmp.RTMPMinaTransport">
+		<level value="WARN" />
+	</logger>
+	<logger name="org.red5.server.net.rtmp.status">
+		<level value="ERROR" />
+	</logger>	
+	<logger name="org.red5.server.service">
+		<level value="ERROR" />
+	</logger>
+	<logger name="org.red5.server.so">
+		<level value="WARN" />
+	</logger>
+	<logger name="org.red5.server.stream">
+		<level value="ERROR" />
+	</logger>	
+	<logger name="org.red5.server.stream.consumer">
+		<level value="ERROR" />
+	</logger>
+	<logger name="org.apache.mina">
+		<level value="WARN" />
+	</logger>	
+	<logger name="org.apache.mina.filter">
+		<level value="WARN" />
+	</logger>
+	<logger name="ch.qos">
+		<level value="WARN" />
+	</logger>
+</configuration>
