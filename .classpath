@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="cfg"/>
+	<classpathentry kind="lib" path="lib/bcprov-jdk15on-1.47.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-modeler-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-pool-1.5.6.jar"/>
+	<classpathentry kind="lib" path="lib/ehcache-core-2.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-continuation-8.1.14.v20131031.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-http-8.1.14.v20131031.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-io-8.1.14.v20131031.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-server-8.1.14.v20131031.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-util-8.1.14.v20131031.jar"/>
+	<classpathentry kind="lib" path="lib/logback-classic-1.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/logback-core-1.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/mina-core-2.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.28-bin.jar"/>
+	<classpathentry kind="lib" path="lib/quartz-1.8.5.jar"/>
+	<classpathentry kind="lib" path="lib/red5-client-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/red5-server-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/servlet-api-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aop-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-asm-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-core-3.1.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/xmlrpc-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/xuggle-xuggler-5.4.jar"/>
+	<classpathentry kind="lib" path="lib/quick-json-1.0.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/HikariCP-1.2.4.jar" sourcepath="lib/HikariCP-1.2.4-sources.jar"/>
+	<classpathentry kind="lib" path="lib/HikariCP-agent-1.2.4.jar"/>
+	<classpathentry kind="lib" path="lib/javassist.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-7-openjdk-amd64"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
